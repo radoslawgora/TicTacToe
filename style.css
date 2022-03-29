@@ -1,0 +1,99 @@
+body {
+    background: #17255A;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ef946c;
+}
+
+main {
+    text-align: center;
+
+}
+
+.heading {
+    text-transform: uppercase;
+    position: relative;
+    background: #17255A;
+}
+
+.heading h1 {
+    text-align: center;
+    overflow: hidden;
+    color: #EF946C;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font: 30px/32px 'Roboto', sans-serif;
+    padding: 50px 0;
+}
+.heading h1:before,
+.heading h1:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #EF946C;
+    height: 0;
+    vertical-align: middle;
+}
+.heading h1:before {
+    margin-left: -100%;
+    margin-right: 80px;
+}
+.heading h1:after {
+    margin-left: 80px;
+    margin-right: -100%;
+}
+
+.game_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 6px;
+    width: 380px;
+    margin: 30px auto;
+}
+
+.cell {
+    background-color: #18206F;
+    cursor: pointer;
+    font-size: 110px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #c4a77d;
+    border-radius: 3px;
+    width: 120px;
+    height: 120px;
+}
+
+#restart_game_button {
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color: #ffffff;
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;        
+}
+
+#restart_game_button:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color: #f6f6f6;
+}
+
+#restart_game_button:active {
+    position: relative;
+	top: 1px;
+}
+
+.winner {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
